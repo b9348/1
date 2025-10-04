@@ -8,4 +8,9 @@ export default defineConfig({
       '@': './src',
     },
   },
+  output: {
+    // GitHub Pages 部署时使用仓库名作为基础路径
+    // 本地开发时使用根路径
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/1/' : '/',
+  },
 });
