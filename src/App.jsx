@@ -15,11 +15,8 @@ import TypographyDemo from './pages/TypographyDemo';
 import NotFound from './pages/NotFound';
 
 const App = () => {
-  // GitHub Pages 部署时使用仓库名作为基础路径
-  const basename = import.meta.env.PROD ? '/1' : '';
-
   return (
-    <Router basename={basename}>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
 
