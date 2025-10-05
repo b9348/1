@@ -8,6 +8,9 @@ export default defineConfig({
       '@': './src',
     },
   },
+  html: {
+    favicon: './public/favicon.svg',
+  },
   output: {
     // EdgeOne 部署使用根路径
     assetPrefix: '/',
